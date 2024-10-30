@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(135deg, #6cb4f3, #a3d3ff);
+    color: #203a4c;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #4682b4, #5f9ea0);
+    color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 1.8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+main.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.gallery, .info, .curiosities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-section {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 250px;
+}
+
+.photo-section:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.photo-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+}
+
+.photo-section:hover .overlay {
+    opacity: 1;
+}
+
+footer {
+    margin-top: 40px;
+    background: #4682b4;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.15);
+}

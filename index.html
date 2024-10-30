@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Álbum de Memórias Escolares de Endreu">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Álbum de Memórias Escolares de Endreu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Memórias Escolares ✏️📘</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('info')">📄 Informações</a></li>
+            <li><a href="#" onclick="showSection('menu')">📸 Galeria</a></li>
+            <li><a href="#" onclick="showSection('curiosities')">🌟 Fatos Curiosos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container" id="content">
+    <section class="menu" id="menu" style="display: none;">
+        <div class="gallery">
+            <div class="photo-section" onclick="showInfo(1)" tabindex="0">
+                <img src="CDM.jpg" alt="Comida Boa">
+                <div class="overlay">
+                    <h2>Café da Manhã 3°E</h2>
+                </div>
+            </div>
+            <div class="photo-section" onclick="showInfo(2)" tabindex="0">
+                <img src="Celeste.jpg" alt="Muito carinho">
+                <div class="overlay">
+                    <h2>Eu e tia Celeste</h2>
+                </div>
+            </div>
+            <div class="photo-section" onclick="showInfo(3)" tabindex="0">
+                <img src="Descanso.jpg" alt="Sophia dormindo">
+                <div class="overlay">
+                    <h2>Sophia dormindo</h2>
+                </div>
+            </div>
+            <div class="photo-section" onclick="showInfo(3)" tabindex="0">
+                <img src="DiaVisao.jpg" alt="Começo Do Namoro">
+                <div class="overlay">
+                    <h2>Dia Mais Feliz</h2>
+                </div>
+            </div>
+            <div class="photo-section" onclick="showInfo(3)" tabindex="0">
+                <img src="Grau.jpg" alt="Grau de Cadeira">
+                <div class="overlay">
+                    <h2>Grau de Cadeira</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info" id="info">
+        <div class="info-section">
+            <h2>Café da Manhã 3°E</h2>
+            <p>Nosso café da manhã do terceirão dentro da sala, essa aula era numa sexta feira véspera das férias de julho e aproveitamos para finalizar a semana comendo um banquete de café da manhã, foi uma experiência muito boa.</p>
+        </div>
+        <div class="info-section">
+            <h2>Eu e tia Celeste</h2>
+            <p>Aqui mostra o carinho que tenho pela tia celeste, era 2023 e os professores fizerem um trabalho que pintávamos as mãos com tinta e colocava em uma papel na parede, e a tia participou junto com a nossa turma inteira!</p>
+        </div>
+        <div class="info-section">
+            <h2>Sophia dormindo</h2>
+            <p>Já nesse dia eu e a Sophia já estávamos namorando e ela estava passando mal eu sentei no colo dela e ela me abraço e dormiu, essa foi uma memória muito boa pois ela se sentiu confortável para descansar.</p>
+        </div>
+        <div class="info-section">
+            <h2>Dia Mais Feliz</h2>
+            <p>Esse foi o dia que eu comecei a enxergar a verdadeira pessoa que eu estava me relacionando e quão foi bom saber quem era essa garota, pois ela me ajudou muito e me ajuda todos os dias, foi um dia muito especial pois sei que nenhum detalhe desse dia foi em vão.</p>
+        </div>
+        <div class="info-section">
+            <h2>Grau de Cadeira</h2>
+            <p>Nesse dia era uma aula vaga, e como estávamos sem fazer nada, tentamos imitar um grau na cadeira do colégio. Esse dia foi muito daoha além disso estávamos no final do ano perto das férias e eu já estava aprovado.</p>
+        </div>
+    </section>
+
+    <section class="curiosities" id="curiosities" style="display: none;">
+        <div class="curiosity-section">
+            <h2>Fatos Curiosos 🌟</h2>
+            <ul>
+                <li>🍞 O "Café da Manhã do 3°E" foi a nossa última aula antes das férias de julho e a única vez em que todos trouxeram algo para compartilhar. A energia dessa manhã foi única, e dizem que os salgados da Livia até hoje são lembrados como os melhores da turma.</li>
+                <li>🎨 "Tia Celeste" foi nossa inspiração para o mural de mãos — uma homenagem ao carinho e apoio que ela sempre demonstrou pela turma. Até hoje, nosso mural ainda está exposto na sala de artes!</li>
+                <li>😴 Naquela vez em que Sophia dormiu no meu colo, todos riram e disseram que nossa “zona de descanso” virou ponto de referência no corredor. Ficou marcada como o lugar oficial do descanso nas aulas vagas.</li>
+                <li>💑 O "Dia Mais Feliz" foi quando eu e Sophia decidimos oficializar o namoro. A gente passava na frente da nossa árvore toda manhã e jurava que, de algum jeito, ela sabia de tudo o que estava acontecendo entre nós!</li>
+                <li>🏎️ "Grau de Cadeira" virou quase um ritual de final de ano. Sempre que alguém passa na frente daquela sala, relembra a famosa cena e tenta fazer igual... mas nunca com o mesmo estilo!</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Morelli 2024, 3°E, Álbum de Endreu - Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
